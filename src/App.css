@@ -1,38 +1,374 @@
-.App {
-  text-align: center;
+.navbar {
+  font-size: 18px;
+  background-color: black;
+  width: 150px;
+  height: 500px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+.dashboard {
+  margin-left: 136px;
+  margin-top: -480px;
+}
+.enquiries {
+  margin-left: 200px;
+  margin-top: -440px;
+  margin-bottom: 400px;
+  margin-right: 35px;
+}
+.profile {
+  margin-left: 200px;
+  margin-top: -400px;
+  margin-right: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.payment {
+  margin-left: 200px;
+  margin-top: -450px;
+  margin-right: 42px;
+  margin-bottom: 50px;
+}
+.contact {
+  margin-left: 400px;
+  margin-top: -400px;
+}
+.faq {
+  margin-left: 280px;
+  margin-top: -464px;
+  margin-bottom: 160px;
+}
+.login {
+  margin-left: 280px;
+  margin-top: -400px;
+}
+.profileinfo {
+  margin-left: 400px;
+  margin-top: -480px;
+}
+.active {
+  color: rgb(11, 157, 194) !important;
+  text-decoration: none;
+}
+#navlinkdash {
+  margin-left: -5px;
+  text-decoration: none;
+}
+#navlinkenquiry {
+  padding-left: 14px;
+  margin-top: -45px;
+  text-decoration: none;
+}
+#navlinkpayment {
+  padding-left: 14px;
+  margin-top: -90px;
+  text-decoration: none;
+}
+#navlinkprofile {
+  padding-left: 14px;
+  margin-top: -95px;
+  text-decoration: none;
+}
+#navlinkfaq {
+  margin-right: 36px;
+  padding-left: 14px;
+  margin-top: -60px;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profileborder {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-left: 30px;
+  width: 216px;
+  background-color: white;
+}
+.createprofile{
+  padding-top: 20px;
+}
+.profile {
+  margin-top: -458px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.imgageTag {
+  width: 110px;
+  height: 110px;
+  border-radius: 60px;
+  border: 1px solid black;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+.invalid-feedback {
+  color: red;
+  font-size: 12px;
+}
+.formlabel {
+  font-size: 13px;
+  margin-right: 191px;
+}
+.labelEmail {
+  font-size: 13px;
+  margin-right: 222px;
+}
+.labelPass {
+  font-size: 13px;
+  margin-right: 196px;
+}
+.labelConfirm {
+  font-size: 13px;
+  margin-right: 150px;
+}
+.submitbtn {
+  background-color: #398bd1;
+  width: 100px;
+  height: 27px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+}
+.container2{
+
+  padding: 20px;
+  margin-top: -450px;
+  
+}
+
+.container1 {
+  border: 1px solid black;
+  width: 300px;
+  background-color: lightblue;
+  border-radius: 5px;
+  margin-left: 485px;
+  border: none;
+  padding: 20px;
+  margin-bottom: 150px;
+  margin-top: 25px;
+}
+.dropdown {
+  font-size: 13px;
+}
+
+.userDetails {
+  border: 1px solid black;
+  width: 400px;
+  padding-left: 20px;
+  height: 245px;
+  border-radius: 8px;
+  background-color: white;
+  margin-top: 100px;
+}
+.newtextarea {
+  width: 255px;
+}
+.patientinfobtn {
+  margin-left: -225px;
+}
+
+.profileborder1 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-left: 30px;
+  width: 450px;
+  margin-left: 104px;
+  margin-bottom: 100px;
+}
+.faqdata {
+  width: 890px;
+  border: none;
+}
+.faqHeading {
+  margin-left: 300px;
+}
+
+.row-title {
+  background-color: black;
+}
+.paymentHeading {
+  margin-left: 400px;
+}
+.container {
+  background-color: #dde6eb;
+}
+.cartinfo {
+  border: 0.1px solid gray;
+  padding-left: 30px;
+  width: 350px;
+}
+.paymentForm {
+  font-size: 14px;
+  margin-left: 30px;
+}
+.loginForm {
+  margin-left: 240px;
+  width: 320px;
+  background-color: lightblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-radius: 5px;
+}
+.dashboardbtn {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: right;
+}
+.dashboardBtn1 {
+  border: none;
+  color: white;
+  background-color: black;
+  border-radius: 3px;
+  margin-right: 124px;
+  border-radius: 25px;
+  height: 27px;
+  font-size: 15px;
+}
+.dashboardBtn2 {
+  border: none;
+  color: white;
+  background-color: black;
+  border-radius: 3px;
+  position: fixed;
+  border-radius: 15px;
+  font-size: 15px;
+}
+.skipMain {
+  margin-right: 10px;
+  color: black;
+  font-size: 14px;
+}
+.visionMission {
+  font-size: 35px;
+}
+.visionMissionhr {
+  width: 80px;
+  height: 5px;
+  margin-top: 5px;
+  font-weight: 700;
+}
+#missionData {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-right: 130px;
+  background-color: lightblue;
+}
+#visionData {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-right: 100px;
+  background-color: lightblue;
+}
+.gallerySection {
+  margin-right: 115px;
+}
+.gallerysec {
+  font-size: 35px;
+}
+.footerCopy {
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.mainNews {
+  background-color: lightblue;
+  height: 200px;
+  margin-left: -135px;
+}
+.newspara {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  padding-top: 28px;
+}
+.newsbtn {
+  margin-left: 280px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  width: 110px;
+  background-color: black;
+  color: white;
+  margin-top: 8px;
+}
+#newsinput {
+  padding: 15px;
+  width: 20rem;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-top: -40px;
+}
+.imageparaHeading {
+  font-size: 35px;
+}
+#eyeBariatricsurgeon{
+  margin-top: 35px;
+}
+.imagesec1 {
+  float: right;
+  border: 1px solid black;
+  margin: 0px 0px 15px 20px;
+  margin-right: 177px;
+  margin-left: 33px;
+}
+.imagesec1:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.imagesec2 {
+  float: left;
+  border: 1px solid black;
+  margin: 0px 0px 15px 20px;
+  margin-right: 33px;
+  margin-left: 32px;
+}
+.imagesec2:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.imagepara2 {
+  margin-right: 175px;
+}
+.imagepara1 {
+  margin-left: 33px;
+}
+
+.slide {
+  margin-left: 14px;
+}
+/*.App {
+  background-color: #dbd8d8;
+}*/
+a {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.mainCounter {
+  background-color: lightblue;
+  height: 215px;
+  margin-left: -134px;
+  padding-top: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter1 {
+  margin-left: 180px;
+  font-size: 25px;
+}
+.counter2 {
+  margin-left: 140px;
+  font-size: 25px;
+}
+.counter3 {
+  margin-left: 100px;
+  font-size: 25px;
+}
+.flowChartheading {
+  font-size: 35px;
+}
+.logoimg{
+  margin-right: 703px;
+  margin-top: -13px;
+  width: 160px;
+  height:50;
+}
+a {
+  color:white !important;
 }
