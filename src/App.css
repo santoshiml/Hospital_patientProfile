@@ -233,7 +233,7 @@
 }
 .skipMain {
   margin-right: 10px;
-  color: black;
+  color: black !important;
   font-size: 14px;
 }
 .visionMission {
