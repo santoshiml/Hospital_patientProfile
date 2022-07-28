@@ -4,9 +4,9 @@ import { useNavigate } from "react-router";
 import SliderHome from "./SliderHome";
 import VisionMissin from "./VisionMissin";
 import Gallery from "./Gallery";
-import Newsletter from './Newsletter';
-import ImageText from './ImageText';
-import Counter from './Counter';
+import Newsletter from "./Newsletter";
+import ImageText from "./ImageText";
+import Counter from "./Counter";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <div className="dashboardbtn">
-      <img
+        <img
           src="https://www.globusmedical.com/international/wp-content/uploads/sites/8/2019/02/globus_logo_temp.png"
           className="logoimg"
         />
@@ -36,25 +36,47 @@ const Dashboard = () => {
         <button onClick={CoonectWithUs} className="dashboardBtn2">
           Connect With Us
         </button>
-      </div>
-      <br />
-      <SliderHome />
-      <br />
-      <br />
+      </div><br/>
+      <div>
+        <div>
+          <SliderHome />
+        </div>
+      </div><br/>
 
-      <Flowchart1 />
-      <br />
-      <br />
-      <Counter /><br/><br/>
-      <VisionMissin />
-      <br />
-      <br />
-      <Gallery />
-      <br />
-      <br />
-      <Newsletter /><br/><br/>
-      <ImageText /><br/><br/>
-      
+      <div>
+        <div>
+          <Flowchart1 />
+        </div>
+      </div><br/>
+
+      <div>
+        <div>
+          <Counter />
+        </div>
+      </div><br/>
+
+      <div>
+        <div>
+          <VisionMissin />
+        </div>
+      </div><br/>
+
+      <div>
+        <div>
+          <Gallery />
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <Newsletter />
+        </div>
+      </div><br/>
+      <div>
+        <div>
+          <ImageText />
+        </div>
+      </div><br/>
     </div>
   );
 };

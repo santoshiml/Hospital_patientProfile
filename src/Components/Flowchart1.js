@@ -8,7 +8,7 @@ export default class Flowchart1 extends Component {
   e=>end: End
   op1=>operation: Dr.Santoshi|department1
   op2=>operation: Dr.Patidar|department2
-  submit=>subroutine: Connect With us|external:>http://localhost:3000/contact
+  submit=>subroutine: Connect With us|external:>/contact
   condition=>condition: Appointment?
   st(right)->op1(right)->op2(right)->condition(yes)->submit(bottom)
   condition(no)->e`;

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import ProgressBar from "react-bootstrap/ProgressBar";
-
 import { toast } from "react-toastify";
 import { AiOutlineSearch } from "react-icons/ai";
-import { Container, Row , Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import DeleteIcon from "@material-ui/icons/Delete";
+import EditIcon from "@material-ui/icons/Edit";
 
 const Profile = () => {
   const imgdata =
@@ -69,6 +70,17 @@ const Profile = () => {
     navigate(`/profile/profileinfo/${id}`);
   };
 
+  const removeProfile = (index) => {
+    var result = window.confirm("You want to delete your profile!");
+    if (result === true) {
+      let userlist = JSON.parse(localStorage.getItem("userinfo"));
+      userlist.splice(index, 1);
+      localStorage.setItem("userinfo", JSON.stringify(userlist));
+      setData(userlist);
+      toast.success(`Profile has beed deleted`)
+    }
+  };
+
   return (
     <div className="profile">
       <h4>
@@ -89,37 +101,41 @@ const Profile = () => {
         <br />
       </div>
 
-      <div className="container"><br/>
-      <Row>
-        {getuser.map((user) => {
-          return (
+      <div className="container">
+        <br />
+        <Row style={{marginLeft:'60px', marginTop:'20px'}}>
+          {getuser.map((user, index) => {
+            return (
               <Col sm={4}>
-              <div className="profileborder">
-                    <p>2d ago...</p>
-                   <img
-                      src={user.image}
-                      className="imgageTag"
-                      alt="Patientprofile"
-                      onClick={() => {
-                        userinfo(user.id);
-                      }}
-                    />
-                    <br />
-                    <br />
-                    <p>{user.name}</p>
-
-                    <p>Active</p>
-                    <ProgressBar
-                      now={60}
-                      style={{ width: "154px", height: "4px" }}
-                    />
-                    <p>Storage 60%</p>
-                    <br />
-                  </div>
+                <div className="profileborder">
+                  <EditIcon />{" "}
+                  <DeleteIcon onClick={() => removeProfile(index)} />{" "}
+                  <p>2d ago...</p>
+                  <img
+                    src={user.image}
+                    className="imgageTag"
+                    alt="Patientprofile"
+                    onClick={() => {
+                      userinfo(user.id);
+                    }}
+                  />
+                  <br />
+                  <br />
+                  <p>{user.name}</p>
+                  <p>Active</p>
+                  <ProgressBar
+                    now={60}
+                    style={{ width: "154px", height: "4px" }}
+                  />
+                  <p>Storage 60%</p>
+                  <br />
+                </div>
               </Col>
-          );
-        })}
-        </Row><br/>
+              
+            );
+          })}
+        </Row>
+        <br />
       </div>
 
       <div className="userDetails">

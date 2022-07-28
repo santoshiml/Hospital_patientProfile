@@ -80,6 +80,7 @@
   padding-left: 30px;
   width: 216px;
   background-color: white;
+  margin-bottom: 60px;
 }
 .createprofile{
   padding-top: 20px;
@@ -371,4 +372,8 @@ a {
 }
 a {
   color:white !important;
+}
+
+@media screen and (max-width: 800px) {
+  
 }

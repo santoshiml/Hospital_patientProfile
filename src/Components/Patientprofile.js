@@ -2,6 +2,7 @@ import React from "react";
 import {useNavigate, useParams} from 'react-router';
 import ProgressBar from "react-bootstrap/ProgressBar";
 
+
 export default function Patientprofile() {
     const navigate = useNavigate()
     const userid = useParams()
@@ -21,6 +22,7 @@ export default function Patientprofile() {
         getuser.map((item) =>item).filter((user) =>user.id===newid).map((data)=>{
             return(
                 <div className="profileborder1"><br/>
+                
                 <center><img
                   src={data.image}
                   className="imgageTag"
