@@ -76,11 +76,16 @@ export default class Flowchart1 extends Component {
         <p>
           Last Selected Dr.- <strong>{elementText}</strong>
         </p>
+        <div className="flowchartspace">
         <Flowchart
+          // className="flowchartspace"
           chartCode={code}
           options={opt}
-          onClick={(elementText) => this.setState({ elementText })}
+          onClick={(elementText) => this.setState({ elementText })} 
+          style={{width:'385px'}}       
         />
+        </div>
+        
       </div>
     );
   }

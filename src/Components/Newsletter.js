@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
@@ -9,7 +9,9 @@ export default function Newsletter() {
       .email("Invalid email format")
       .required(""),
   });
-  const [value, setValue] = React.useState('');
+
+  // const [value, setValue] = useState('');
+
 
   const formOptions = { resolver: yupResolver(validationSchema) };
   const {
@@ -21,8 +23,21 @@ export default function Newsletter() {
 
 
   const onSubmit = (data) => {
-    console.log(data);
+    reset();
+    // let newData = data; 
+    // localStorage.setItem('NewsData', JSON.stringify(newData))
+    // let newsletter_list = JSON.parse(localStorage.getItem("NewsData"));
+    // console.log('2222', newsletter_list)
+    // let Contact_list = JSON.parse(localStorage.getItem("user"));
+    // console.log('3333', Contact_list)
+    // Contact_list.push(newsletter_list);
+
+    // const nnn = localStorage.setItem("user", JSON.stringify(Contact_list))
+    // console.log('6666', nnn)
+    
+
   };
+
 
   return (
     <div className="mainNews">
@@ -35,8 +50,7 @@ export default function Newsletter() {
           placeholder="Enter Email..."
           {...register("email")}
           className={`form-control ${errors.email ? "is-invalid" : ""}`}
-        /></center>
-        
+        /></center>    
       </form>
     </div>
   );

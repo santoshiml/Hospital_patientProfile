@@ -86,7 +86,7 @@ export default function Login() {
             </div>
             <br />
           </div>
-          <input type="submit" class="btn btn-primary"/>
+          <input type="submit" className="btn btn-primary"/>
         </div><br/>
         <GoogleOAuthProvider>
         <GoogleLogin

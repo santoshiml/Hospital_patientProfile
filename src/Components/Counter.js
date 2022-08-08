@@ -44,6 +44,7 @@ export default function Counter() {
       </CountUp>
       </div>
       </div>
+      
 
     </div>
   );

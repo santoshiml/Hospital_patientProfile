@@ -29,9 +29,7 @@ export default function ImageText() {
         professionals if we are designing a website for a clinic or a hospital.
         </p>
       </p>
-      <br />
-      <br />
-      <br />
+    
       <p className="imagepara2">
         <img
           src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -46,8 +44,7 @@ export default function ImageText() {
         field of medicine, conferences the health professional participates in,
         publications, possible appreciations, etc.
       </p>
-      <br />
-      <br />
+
     </div>
   );
 }

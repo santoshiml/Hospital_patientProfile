@@ -37,14 +37,11 @@ export default function Patientprofile() {
                   />
                   <p>Storage 60%</p>
                  <br/>
-                </div>
-                
+                </div>              
                 </div>
             )
         })
     }
-     
-
     </div>
   );
 }

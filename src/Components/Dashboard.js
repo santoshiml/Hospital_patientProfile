@@ -27,7 +27,7 @@ const Dashboard = () => {
           className="logoimg"
         />
         <a className="skipMain" href="#main">
-          Skip content
+          SkipContent
         </a>
         <button onClick={Login} className="dashboardBtn1">
           Login
@@ -36,47 +36,33 @@ const Dashboard = () => {
         <button onClick={CoonectWithUs} className="dashboardBtn2">
           Connect With Us
         </button>
-      </div><br/>
-      <div>
-        <div>
-          <SliderHome />
-        </div>
-      </div><br/>
-
-      <div>
-        <div>
-          <Flowchart1 />
-        </div>
-      </div><br/>
-
-      <div>
-        <div>
-          <Counter />
-        </div>
-      </div><br/>
-
-      <div>
-        <div>
-          <VisionMissin />
-        </div>
-      </div><br/>
-
-      <div>
-        <div>
-          <Gallery />
-        </div>
+      </div>
+      <div style={{ marginTop: "12px" }} >
+        <SliderHome />
+      </div>
+      <div className='dashboardSpace'>
+        <Flowchart1 />
       </div>
 
-      <div>
-        <div>
-          <Newsletter />
-        </div>
-      </div><br/>
-      <div>
-        <div>
-          <ImageText />
-        </div>
-      </div><br/>
+      <div className='dashboardSpace'>
+        <Counter />
+      </div>
+
+      <div className='dashboardSpace'>
+        <VisionMissin />
+      </div>
+
+      <div className='dashboardSpace'>
+        <Gallery />
+      </div>
+
+      <div className='dashboardSpace'>
+        <Newsletter />
+      </div>
+
+      <div className='dashboardSpace' style={{marginBottom: "30px" }}>
+        <ImageText />
+      </div>
     </div>
   );
 };

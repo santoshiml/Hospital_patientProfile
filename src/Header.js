@@ -12,6 +12,7 @@ const Header = () => {
 
   return (
     <div className = "navbar "><br/>
+    
       <NavLink exact="true" activeclassname="active" to="/" id="navlinkdash">
       <AiOutlineHome style ={{marginRight:"5px", marginTop:"-5px"}}/>Dashboard
 
@@ -31,7 +32,7 @@ const Header = () => {
 
       <p style={{color:"white"}}><center>Need our Help?</center></p>
       <button type="button" onClick={handleClick} class="btn btn-success" id="navlinkcontact" >Contact</button>
-
+   
     </div>
   );
 };

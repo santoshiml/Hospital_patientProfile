@@ -39,6 +39,7 @@ const Enquiries = () => {
           })}
         </tbody>
       </Table> 
+      <p>This is API screte key:{process.env.REACT_APP_SECRETE_KEY}</p>
      
     </div>
   );
