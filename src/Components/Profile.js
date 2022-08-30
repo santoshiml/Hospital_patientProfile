@@ -10,7 +10,7 @@ import ProfileModal from "./modal";
 
 const Profile = () => {
   const imgdata =
-    "https://png.pngtree.com/png-clipart/20190924/original/pngtree-user-vector-avatar-png-image_4830521.jpg";
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQihmhaYm72JXzk72apzhSBuSeSc0Xhcyi9czUJWHE&s";
 
   const profile = [{ id: 1, name: "Santoshi Patidar", image: imgdata }];
   const [data, setData] = useState([...profile]);
@@ -61,8 +61,9 @@ const Profile = () => {
     ? data
     : data.filter((data) => data.name.toLowerCase().includes(search));
 
-  localStorage.setItem("userinfo", JSON.stringify(filtered));
-  const getuser = JSON.parse(localStorage.getItem("userinfo"));
+    localStorage.setItem("userinfo", JSON.stringify(filtered));
+    const getuser = JSON.parse(localStorage.getItem("userinfo"));
+    console.log(1111, getuser)
 
   
   // useEffect(() =>{
@@ -71,10 +72,12 @@ const Profile = () => {
   // setData(item) 
   // }, [])
 
+
   const userinfo = (id) => {
     console.log("data", id);
     navigate(`/profile/profileinfo/${id}`);
   };
+
 
   const removeProfile = (index) => {
     var result = window.confirm("You want to delete your profile!");
@@ -86,6 +89,7 @@ const Profile = () => {
       toast.success(`Profile has beed deleted`);
     }
   };
+
 
   const editProfile = (index, image, name) => {
     console.log("eeee", index, image, name);
@@ -99,7 +103,6 @@ const Profile = () => {
     console.log("Modal Closed");
     setIsVisible(false);
   };
-
 
   const updateProfile = (index, name, image) => {
     debugger;
@@ -117,7 +120,6 @@ const Profile = () => {
     toast.success(`Profile has beed updated`);
     isvisible && setIsVisible(false);
   };
-
 
   return (
     <div className="profile">
@@ -218,8 +220,6 @@ const Profile = () => {
           Save
         </button>
       </div><br />
-      
-    
     </div>
     
   );
