@@ -11,7 +11,7 @@ export default function SliderHome() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-  src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  src="https://www.satvix.com/wp-content/uploads/2016/05/Healthcare-Backround.jpg"
       alt="First slide"
       height ="438px" width="370px"
     />
