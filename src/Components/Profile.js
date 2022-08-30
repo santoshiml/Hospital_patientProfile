@@ -57,15 +57,13 @@ const Profile = () => {
     }
   };
 
-
-
-
   const filtered = !search
     ? data
     : data.filter((data) => data.name.toLowerCase().includes(search));
 
   localStorage.setItem("userinfo", JSON.stringify(filtered));
   const getuser = JSON.parse(localStorage.getItem("userinfo"));
+
   
   // useEffect(() =>{
   // // localStorage.setItem("userinfo", JSON.stringify(filtered));
@@ -116,6 +114,7 @@ const Profile = () => {
     update_list.splice(index, 1, updateuser);
     localStorage.setItem("userinfo", JSON.stringify(update_list));
     setData(update_list);
+    toast.success(`Profile has beed updated`);
     isvisible && setIsVisible(false);
   };
 
